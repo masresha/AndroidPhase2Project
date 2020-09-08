@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Submit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="First Name"></EditText>
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="Last Name"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="135dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="97dp">
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="379dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="62dp"
+            tools:layout_editor_absoluteY="112dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="210dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="197dp">
+        <EditText
+            android:id="@+id/github_link"
+            android:layout_width="379dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:hint="Project on GITHUB(link)"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="203dp"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="297dp">
+        <Button
+            android:id="@+id/form_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="172dp"
+            android:background="@drawable/submitbutton"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/projectsubmission" />
+
+
+</RelativeLayout>
